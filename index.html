@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr=[1,2,3,4,5,6]
+    let a=arr.filter(arr=>arr>2)
+    console.log("array filtering")
+    console.log(a);
+
+    let arr2=[2,1,3,4,5]
+    let b=arr2.map(arr2=>arr2*3)
+    console.log("array mapping")
+    console.log(b)
+
+    let arr3=[4,3,2,6,8]
+    let c=arr3.find(arr3=>arr3>5)
+    console.log("array finding")
+    console.log(c)
+
+    let arr4=[2,5,1,6,8]
+    console.log("array checking")
+    for(let i=0;i<arr4.length;i++){
+        if(arr4[i]>4)
+          console.log(arr4[i])
+    }
+
+    let max=0;
+    let maxstring="";
+    let arr5=["hi","hello","welcome","thankyou"]
+    for(let i=0;i<arr5.length;i++){
+           let numm=arr5[i].length;
+           if(numm>max){
+             max=numm;
+             maxstring=arr5[i];
+           }
+             
+    }
+    console.log("longest string in an array")
+    console.log(maxstring);
+
+    </script>
+</body>
+</html>
